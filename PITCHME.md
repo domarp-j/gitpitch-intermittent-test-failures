@@ -7,7 +7,7 @@
 
 @title[Source]
 
-### Source 
+### Source
 
 - This presentation is based on a talk given by **Tim Mertens** of **Avant** at **RubyConf 2017**
 
@@ -19,6 +19,10 @@
 
 - Deterministic code always produces the same output for a given input
 - In contrast, non-deterministic code produces random, unexpected output for a given input, possibly caused by:
-  - Race conditions 
+  - Race conditions
   - Unexpected state
   - Changing state
+
+---
+
+![Image-Absolute](assets/images/deterministic_nondeterministic.png)
