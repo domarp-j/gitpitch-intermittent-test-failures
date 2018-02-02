@@ -12,6 +12,7 @@ body {
   background: -webkit-linear-gradient(to right, #1F1C18, #F3003F);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background: linear-gradient(to right, #1F1C18, #F3003F);
+  color: white;
 }
 
 #gp-logo img {
@@ -19,6 +20,7 @@ body {
   max-width: none;
 }
 
-.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+.reveal, .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
   color: white;
+
 }
