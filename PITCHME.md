@@ -9,6 +9,6 @@
 
 ### Source 
 
-- This presentation is based on a talk given by Tim Mertens of Avant at RubyConf 2017
+- This presentation is based on a talk given by **Tim Mertens** of **Avant** at **RubyConf 2017**
 
 ---
