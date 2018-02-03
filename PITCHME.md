@@ -113,3 +113,14 @@
   - Names: D'Angelo, Doe-Smith, Smith Jennings
   - Phone numbers in different formats
 - If you do need to randomize data, output it with test error messages to make debugging easier
+
+---
+
+### 4) Mutated Constants
+
+- Don't overwrite constants - they can be mutated between tests
+- Unfortunately, MiniTest doesn't have a built-in method for stubbing constants when needed
+
+---?code=code/minitest_stub_const.rb&lang=ruby
+
+<span class="code-presenting-annotation fragment current-only visible current-fragment">Source: minitest-stub-const docs</span>
