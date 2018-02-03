@@ -55,3 +55,16 @@
 ### Causes for Non-Deterministic, __Reproducible__ Failures
 
 ---
+
+### 1) Data Pollution
+
+- Tests should always clean up after themselves, through before actions, etc.
+- Be aware of both planned and unplanned dependencies
+
+---?code=code/feature_toggle.rb&lang=ruby
+
+@[1-2,4-13](This broke)
+@[3](Line added to resolve dependency issues)
+@[1-13](This works)
+
+---
