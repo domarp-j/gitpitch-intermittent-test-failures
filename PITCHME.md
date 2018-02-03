@@ -68,3 +68,25 @@
 @[1-13](This works)
 
 ---
+
+### 1) Data Pollution
+
+- Tests should always clean up after themselves, through before actions, etc.
+- Be aware of both planned and unplanned dependencies
+- Make sure transactional fixtures are disabled in rails
+
+---?code=code/trans_fix.rb&lang=ruby
+
+---
+
+### 2) Vague Assertions
+
+- Never expect the return value of an ActiveRecord query to return correction in some assumed order
+
+---?code=code/assertion_bad.rb&lang=ruby
+
+---?code=code/assertion-good.rb&lang=ruby
+
+@[5](Check the count)
+@[6-7](Check for included values)
+@[8](Check for excluded values)
