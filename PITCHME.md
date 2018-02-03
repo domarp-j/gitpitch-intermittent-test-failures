@@ -77,7 +77,7 @@
 
 ---?code=code/trans_fix.rb&lang=ruby
 
-Try not to do this
+<span class="code-presenting-annotation fragment current-only visible current-fragment">Try not to do this</span>
 
 ---
 
