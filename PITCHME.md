@@ -121,7 +121,7 @@
 
 ---?code=code/minitest_stub_const.rb&lang=ruby
 
-<span class="code-presenting-annotation fragment current-only visible current-fragment">[Source: minitest-stub-const docs](https://github.com/adammck/minitest-stub-const)</span>
+<span class="code-presenting-annotation fragment current-only visible current-fragment" style='color: white; text-decoration: underline;'>[Source: minitest-stub-const docs](https://github.com/adammck/minitest-stub-const)</span>
 
 ---
 
