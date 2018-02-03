@@ -71,9 +71,7 @@
 
 ### 1) Data Pollution
 
-- Tests should always clean up after themselves, through before actions, etc.
-- Be aware of both planned and unplanned dependencies
-- **Make sure transactional fixtures are disabled in rails**
+- Make sure transactional fixtures are disabled in rails
 
 ---?code=code/trans_fix.rb&lang=ruby
 
@@ -97,7 +95,6 @@
 
 ### 2) Vague Assertions
 
-- Never expect the return value of an ActiveRecord query to return in some assumed order
 - Don't expect tables to be empty - check for __relative__ change
 
 ---?code=code/assertion_bad.rb&lang=ruby
@@ -130,8 +127,8 @@
 
 ### 4) Mutated Constants
 
-- Don't overwrite constants - they can be mutated between tests
-- RSpec has a `stub_const` method for stubbing constants
-- Unfortunately, MiniTest doesn't have a built-in method for stubbing constants when needed
 - In tests, set constants using `let` variables
+  - Constants defined directly within tests often aren't restricted to the scope in which they're defined
   - Setting multiple constants with the same name can result in a race condition
+
+---?code=code/test_const.rb&lang=ruby
