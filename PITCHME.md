@@ -104,6 +104,8 @@
 
 ---?code=code/assertion_good.rb&lang=ruby
 
+---
+
 ### 3) Randomized Test Data
 
 - Don't randomize your test data
