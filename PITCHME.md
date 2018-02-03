@@ -34,3 +34,13 @@
 - Non-deterministic behavior causes intermittent test failures
 - "Flaky tests are a myth." - Tim Mertens
 - **Our goal is to build tests that defend against non-deterministic behavior**
+
+---
+
+## ??? 
+
+--- 
+
+## No. 
+
+---
