@@ -7,8 +7,8 @@
 theme : sky
 theme-override : assets/css/PITCHME.css
 # theme-override : assets/css/PITCHME.codemax.css
-logo : assets/images/excella.png
+# logo : assets/images/excella.png
 # highlight : atom-one-light
 # transition : none
 # published : true
-# footnote : "GitPitch [ Netflix ] Presentation Template"
+footnote : "Intermittent Test Failures | Pramod Jacob"
