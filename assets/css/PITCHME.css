@@ -35,3 +35,8 @@ body {
 .reveal #notification {
   color: white !important;
 }
+
+,reveal a {
+  color: white;
+  text-decoration: underline;
+}
