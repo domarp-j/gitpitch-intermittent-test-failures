@@ -37,13 +37,13 @@
 
 ---
 
-## ??? 
+??? 
 
 --- 
 
-## No. 
+No. 
 
 ---
 
 ## Finding Non-Deterministic Tests
-#### ...that are reproducible
+...that are reproducible
