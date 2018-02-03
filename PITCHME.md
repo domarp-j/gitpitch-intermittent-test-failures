@@ -103,3 +103,11 @@
 ---?code=code/assertion_bad.rb&lang=ruby
 
 ---?code=code/assertion_good.rb&lang=ruby
+
+### 3) Randomized Test Data
+
+- Don't randomize your test data
+- Don't use Faker, which ight return strings in a format that code doesn't handle properly
+  - Names: D'Angelo, Doe-Smith, Smith Jennings
+  - Phone numbers in different formats
+- If you do need to randomize data, output it with test error messages to make debugging easier
