@@ -31,3 +31,7 @@ body {
 .reveal .slide-number {
   color: white !important;
 }
+
+.reveal #title-footer {
+  color: white;
+}
