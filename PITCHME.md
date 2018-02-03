@@ -73,9 +73,11 @@
 
 - Tests should always clean up after themselves, through before actions, etc.
 - Be aware of both planned and unplanned dependencies
-- Make sure transactional fixtures are disabled in rails
+- **Make sure transactional fixtures are disabled in rails**
 
 ---?code=code/trans_fix.rb&lang=ruby
+
+Try not to do this
 
 ---
 
