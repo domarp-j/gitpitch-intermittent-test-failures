@@ -24,10 +24,14 @@ body {
   color: white;
 }
 
-#title-footer p.footer-fade {
+.footer-hard, .footer-fade {
   color: white;
 }
 
 .controls-arrow {
   color: white;
+}
+
+.slide-number {
+  color: white !important;
 }
