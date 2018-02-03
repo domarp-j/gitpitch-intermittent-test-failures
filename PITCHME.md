@@ -81,11 +81,11 @@
 
 ### 2) Vague Assertions
 
-- Never expect the return value of an ActiveRecord query to return correction in some assumed order
+- Never expect the return value of an ActiveRecord query to return in some assumed order
 
 ---?code=code/assertion_bad.rb&lang=ruby
 
----?code=code/assertion-good.rb&lang=ruby
+---?code=code/assertion_good.rb&lang=ruby
 
 @[5](Check the count)
 @[6-7](Check for included values)
