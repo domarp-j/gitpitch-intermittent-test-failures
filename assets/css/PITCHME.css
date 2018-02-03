@@ -33,5 +33,5 @@ body {
 }
 
 .reveal #notification {
-  color: white;
+  color: white !important;
 }
