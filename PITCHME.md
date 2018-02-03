@@ -9,7 +9,7 @@
 
 ### Source
 
-- This presentation is based on a talk given by **Tim Mertens** of **Avant** at **RubyConf 2017**
+- This presentation is a review of a talk given by [Tim Mertens of Avant at RubyConf 2017](https://www.youtube.com/watch?v=JH9vugpPNyw)
 
 ---
 
