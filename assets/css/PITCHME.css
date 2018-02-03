@@ -36,7 +36,7 @@ body {
   color: white !important;
 }
 
-,reveal a {
+.reveal a {
   color: white;
   text-decoration: underline;
 }
