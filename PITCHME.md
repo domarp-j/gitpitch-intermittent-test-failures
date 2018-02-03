@@ -125,3 +125,13 @@
 ---?code=code/minitest_stub_const.rb&lang=ruby
 
 <span class="code-presenting-annotation fragment current-only visible current-fragment">Source: minitest-stub-const docs</span>
+
+---
+
+### 4) Mutated Constants
+
+- Don't overwrite constants - they can be mutated between tests
+- RSpec has a `stub_const` method for stubbing constants
+- Unfortunately, MiniTest doesn't have a built-in method for stubbing constants when needed
+- In tests, set constants using `let` variables
+  - Setting multiple constants with the same name can result in a race condition
