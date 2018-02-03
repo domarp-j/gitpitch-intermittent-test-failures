@@ -85,10 +85,21 @@
 
 - Never expect the return value of an ActiveRecord query to return in some assumed order
 
----?code=code/assertion_bad.rb&lang=ruby
+---?code=code/user_test_bad.rb&lang=ruby
 
----?code=code/assertion_good.rb&lang=ruby
+---?code=code/user_test_good.rb&lang=ruby
 
 @[5](Check the count)
 @[6-7](Check for included values)
 @[8](Check for excluded values)
+
+---
+
+### 2) Vague Assertions
+
+- Never expect the return value of an ActiveRecord query to return in some assumed order
+- Don't expect tables to be empty - check for __relative__ change
+
+---?code=code/assertion_bad.rb&lang=ruby
+
+---?code=code/assertion_good.rb&lang=ruby

@@ -1,5 +1,6 @@
-describe 'User' do
-  it 'gets all users'
-    assert_equal [user_1, user2], User.all
+describe '#inc_user_count'
+  it 'increments user count' do
+    inc_user_count
+    assert_equal 1, User.count
   end
 end
