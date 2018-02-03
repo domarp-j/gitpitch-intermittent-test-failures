@@ -128,7 +128,9 @@
 ### 4) Mutated Constants
 
 - In tests, set constants using `let` variables
-  - Constants defined directly within tests often aren't restricted to the scope in which they're defined
-  - Setting multiple constants with the same name can result in a race condition
+- Constants defined directly within tests often aren't restricted to the scope in which they're defined
+- Setting multiple constants with the same name can result in a race condition
 
----?code=code/test_const.rb&lang=ruby
+---?code=code/test_const_bad.rb&lang=ruby
+
+---?code=code/test_const_good.rb&lang=ruby
