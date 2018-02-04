@@ -134,3 +134,19 @@
 ---?code=code/test_const_bad.rb&lang=ruby
 
 ---?code=code/test_const_good.rb&lang=ruby
+
+---
+
+### Debugging Non-Deterministic Reproducible Failures
+
+---
+
+### Using Seeds & Debuggers
+
+- Obtain two test seeds
+  - One where the ND test fails
+  - One where the ND test succeeds
+- Add a `binding.pry` in the ND test
+- Re-run the tests with each seed, and determine what is different
+
+---
