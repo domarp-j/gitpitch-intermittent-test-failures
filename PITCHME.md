@@ -63,9 +63,9 @@
 
 ---?code=code/feature_toggle.rb&lang=ruby
 
-@[1-2,4-13](This broke)
+@[1-2,4-15](This broke)
 @[3](Line added to resolve dependency issues)
-@[1-13](This works)
+@[1-15](This works)
 
 ---
 
