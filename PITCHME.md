@@ -71,7 +71,7 @@
 
 ### 1) Data Pollution
 
-- Make sure transactional fixtures are enabled in rails
+- Make sure transactional fixtures are enabled
 
 ---?code=code/trans_fix.rb&lang=ruby
 
