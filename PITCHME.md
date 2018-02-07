@@ -150,3 +150,13 @@
 - Re-run the tests with each seed, and determine what is different
 
 ---?code=code/seed&lang=shell
+
+---
+
+### Using Bisect
+
+- Obtain a test seed that includes the test failure
+- Use **bisection** to identify the minimum amount of tests that produce the test failure
+  - RSpec has a built-in `--bisect` option
+  - [`minitest-bisect`](https://github.com/seattlerb/minitest-bisect) gem provides the same functionality for MiniTest
+- Useful to identify if data pollution is the culprit behind the ND test
