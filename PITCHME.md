@@ -181,8 +181,6 @@
 
 +++?code=code/date_today_current.rb&lang=ruby
 
-@[1-7](<span class="code-presenting-annotation fragment current-only visible current-fragment">This fails</span>)
-
 +++
 
 ### 1) Date and Time
