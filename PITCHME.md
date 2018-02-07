@@ -23,7 +23,7 @@
   - Unexpected state
   - Changing state
 
----
++++
 
 ![Image-Absolute](assets/images/deterministic_nondeterministic.png)
 
@@ -54,26 +54,26 @@
 
 ### Causes for Non-Deterministic, __Reproducible__ Failures
 
----
++++
 
 ### 1) Data Pollution
 
 - Tests should always clean up after themselves, through before actions, etc.
 - Be aware of both planned and unplanned dependencies
 
----?code=code/feature_toggle.rb&lang=ruby
++++?code=code/feature_toggle.rb&lang=ruby
 
 @[1-2,4-15](This broke)
 @[3](Line added to resolve dependency issues)
 @[1-15](This works)
 
----
++++
 
 ### 1) Data Pollution
 
 - Make sure transactional fixtures are enabled
 
----?code=code/trans_fix.rb&lang=ruby
++++code=code/trans_fix.rb&lang=ruby
 
 <span class="code-presenting-annotation fragment current-only visible current-fragment">Try not to do this</span>
 
@@ -83,23 +83,23 @@
 
 - Never expect the return value of an ActiveRecord query to return in some assumed order
 
----?code=code/user_test_bad.rb&lang=ruby
++++?code=code/user_test_bad.rb&lang=ruby
 
----?code=code/user_test_good.rb&lang=ruby
++++?code=code/user_test_good.rb&lang=ruby
 
 @[5](Check the count)
 @[6-7](Check for included values)
 @[8](Check for excluded values)
 
----
++++
 
 ### 2) Vague Assertions
 
 - Don't expect tables to be empty - check for __relative__ change
 
----?code=code/assertion_bad.rb&lang=ruby
++++?code=code/assertion_bad.rb&lang=ruby
 
----?code=code/assertion_good.rb&lang=ruby
++++?code=code/assertion_good.rb&lang=ruby
 
 ---
 
@@ -119,11 +119,11 @@
 - RSpec has a `stub_const` method for stubbing constants
 - Unfortunately, MiniTest doesn't have a built-in method for stubbing constants when needed
 
----?code=code/minitest_stub_const.rb&lang=ruby
++++?code=code/minitest_stub_const.rb&lang=ruby
 
 <span class="code-presenting-annotation fragment current-only visible current-fragment">[Source: minitest-stub-const docs](https://github.com/adammck/minitest-stub-const)</span>
 
----
++++
 
 ### 4) Mutated Constants
 
@@ -131,15 +131,15 @@
 - Constants defined directly within tests often aren't restricted to the scope in which they're defined
 - Setting multiple constants with the same name can result in a race condition
 
----?code=code/test_const_bad.rb&lang=ruby
++++?code=code/test_const_bad.rb&lang=ruby
 
----?code=code/test_const_good.rb&lang=ruby
++++?code=code/test_const_good.rb&lang=ruby
 
 ---
 
 ### Debugging Non-Deterministic Reproducible Failures
 
----
++++
 
 ### Using Seeds & Debuggers
 
@@ -149,7 +149,7 @@
 - Add a `binding.pry` in the ND test
 - Re-run the tests with each seed, and determine what is different
 
----?code=code/seed&lang=shell
++++?code=code/seed&lang=shell
 
 ---
 
@@ -165,13 +165,13 @@
 
 ### Non-Reproducible ND Tests
 
----
++++
 
 ### 1) Date and Time
 
 - Date/Time tests, if not properly handled, can essentially be time-bombs that explode at any given time for an unknown reason (a new year, its a weekend or holiday, etc)
 
----
++++
 
 ### 1) Date and Time
 
@@ -179,11 +179,11 @@
   - `Date.today` uses system time zone
   - `Date.current` uses application time zone
 
----?code=code/date_today_current.rb&lang=ruby
++++?code=code/date_today_current.rb&lang=ruby
 
 @[1-7](<span class="code-presenting-annotation fragment current-only visible current-fragment">This fails</span>)
 
----
++++
 
 ### 1) Date and Time
 
@@ -191,14 +191,14 @@
   - [`timecop`](https://github.com/travisjeffery/timecop) gem comes in handy here, but it isn't necessary
 
 
----?code=code/date_stub.rb&lang=ruby
++++?code=code/date_stub.rb&lang=ruby
 
 @[2-9](Date gaps)
 @[15-18](This would break without date stubbing)
 @[11-13](Date stubbing)
 @[1-19]()
 
----
++++
 
 ### 1) Date and Time
 
