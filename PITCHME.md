@@ -160,3 +160,10 @@
   - RSpec has a built-in `--bisect` option
   - [`minitest-bisect`](https://github.com/seattlerb/minitest-bisect) gem provides the same functionality for MiniTest
 - Useful to identify if data pollution is the culprit behind the ND test
+
+---
+
+### Non-Reproducible ND Tests
+
+---
+
