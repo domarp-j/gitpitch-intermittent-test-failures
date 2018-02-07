@@ -187,13 +187,20 @@
 
 ### 1) Date and Time
 
-- Make sure to stub out the current Date, Time, or DateTime
-  - TimeCop gem comes in handy here, but it isn't necessary
+- Make sure to stub out the current `Date`, `Time`, or `DateTime`
+  - [`timecop`](https://github.com/travisjeffery/timecop) gem comes in handy here, but it isn't necessary
+
+
+---?code=code/date_stub.rb&lang=ruby
+
+@[15-18](This will break in the future!)
+@[11-13](Date stubbing)
+@[1-19]
 
 ---
 
 ### 1) Date and Time
 
-- Don't use created_at or updated_at as a reliable metric in any way - they'll be the same for all fixtures created
+- Don't use `created_at` or `updated_at` as a reliable metric in any way
 
 ---
