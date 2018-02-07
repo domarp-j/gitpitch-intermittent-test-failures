@@ -203,3 +203,37 @@
 - Don't use `created_at` or `updated_at` as a reliable metric in any way
 
 ---
+
+### 2) Environmental Differences
+
+- Compare configs between environments (env variables)
+- Check if CI is executing tests differently than local machine
+- Seeds missing/present on local machine
+- Missing migrations
+- OS differences
+- Note - Docker consistency between local & CI should resolve this
+
+---
+
+### 3) Timeouts and Asynchronous JavaScript
+
+- You can't always trust your local machine to replicate CI failures
+- Tim Mertens recommends increasing timeouts as needed
+- Wait for pages to finish loading before interacting with them
+  - [`site_prism` gem load validations](https://github.com/natritmeyer/site_prism)
+
+---
+
+### 4) ???
+
+- SSH into the environment & try to reproduce it
+- Check gem GitHub repos for related issues/changes
+- Make sure you're using a debugger
+- Add logging to your tests
+- Are you being systematic with how you're tackling the bug?
+  - Do a bisect and keep narrowing your scope
+  - Write it down
+
+---
+
+### Look for a Confluence page
