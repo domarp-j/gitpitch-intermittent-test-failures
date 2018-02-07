@@ -48,7 +48,7 @@
 ### Finding Non-Deterministic Tests
 ...that are reproducible
 
----?code=code/test_rerun.rb&lang=ruby&title=Multiple Test Runs
++++?code=code/test_rerun.rb&lang=ruby&title=Multiple Test Runs
 
 ---
 
@@ -73,7 +73,7 @@
 
 - Make sure transactional fixtures are enabled
 
-+++code=code/trans_fix.rb&lang=ruby
++++?code=code/trans_fix.rb&lang=ruby
 
 <span class="code-presenting-annotation fragment current-only visible current-fragment">Try not to do this</span>
 
@@ -151,7 +151,7 @@
 
 +++?code=code/seed&lang=shell
 
----
++++
 
 ### Using Bisect
 
