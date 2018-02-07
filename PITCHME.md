@@ -106,7 +106,7 @@
 ### 3) Randomized Test Data
 
 - Don't randomize your test data
-- Don't use Faker, which ight return strings in a format that code doesn't handle properly
+- Don't use Faker, which might return strings in a format that code doesn't handle properly
   - Names: D'Angelo, Doe-Smith, Smith Jennings
   - Phone numbers in different formats
 - If you do need to randomize data, output it with test error messages to make debugging easier
@@ -175,16 +175,6 @@
 
 ### 1) Date and Time
 
-- Make sure that you're clearly distinguishing between UTC & local time
-  - `Date.today` uses system time zone
-  - `Date.current` uses application time zone
-
-+++?code=code/date_today_current.rb&lang=ruby
-
-+++
-
-### 1) Date and Time
-
 - Make sure to stub out the current `Date`, `Time`, or `DateTime`
   - [`timecop`](https://github.com/travisjeffery/timecop) gem comes in handy here, but it isn't necessary
 
@@ -195,6 +185,16 @@
 @[15-18](This would break without date stubbing)
 @[11-13](Date stubbing)
 @[1-19]()
+
++++
+
+### 1) Date and Time
+
+- Make sure that you're clearly distinguishing between UTC & local time
+  - `Date.today` uses system time zone
+  - `Date.current` uses application time zone
+
++++?code=code/date_today_current.rb&lang=ruby
 
 +++
 
@@ -236,4 +236,4 @@
 
 ---
 
-### Look for a Confluence page
+### (Link to Confluence page)
