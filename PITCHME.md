@@ -194,7 +194,7 @@
 ---?code=code/date_stub.rb&lang=ruby
 
 @[2-9](Date gaps)
-@[15-18](This will break in the future!)
+@[15-18](This would break without date stubbing)
 @[11-13](Date stubbing)
 @[1-19]()
 
