@@ -167,3 +167,33 @@
 
 ---
 
+### 1) Date and Time
+
+- Date/Time tests, if not properly handled, can essentially be time-bombs that explode at any given time for an unknown reason (a new year, its a weekend or holiday, etc)
+
+---
+
+### 1) Date and Time
+
+- Make sure that you're clearly distinguishing between UTC & local time
+  - `Date.today` uses system time zone
+  - `Date.current` uses application time zone
+
+---?code=code/date_today_current.rb&lang=ruby
+
+@[1-7](<span class="code-presenting-annotation fragment current-only visible current-fragment">This fails</span>)
+
+---
+
+### 1) Date and Time
+
+- Make sure to stub out the current Date, Time, or DateTime
+  - TimeCop gem comes in handy here, but it isn't necessary
+
+---
+
+### 1) Date and Time
+
+- Don't use created_at or updated_at as a reliable metric in any way - they'll be the same for all fixtures created
+
+---
