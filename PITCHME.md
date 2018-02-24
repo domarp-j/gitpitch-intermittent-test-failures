@@ -39,14 +39,14 @@
 
 ## ???
 
-Notes:
+Note:
 Will this presentation solve the timeout errors we're seeing in acceptance tests?
 
 +++
 
 ## No.
 
-Notes:
+Note:
 Unfortunately no, but fully Dockerizing our test suite *may* help.
 
 ---
@@ -218,7 +218,7 @@ Unfortunately no, but fully Dockerizing our test suite *may* help.
 - Missing migrations?
 - OS differences?
 
-Notes:
+Note:
 Docker consistency between local & CI should resolve this
 
 ---
@@ -229,8 +229,8 @@ Docker consistency between local & CI should resolve this
 - Wait for pages to finish loading before interacting with them
   - [`site_prism` gem load validations](https://github.com/natritmeyer/site_prism)
 
-Notes:
-Discussion - is it always bad to increase timeouts when needed?
+Note:
+Is it always bad to increase timeouts when needed?
 
 ---
 
