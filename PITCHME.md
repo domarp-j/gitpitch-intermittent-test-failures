@@ -256,25 +256,25 @@ Is it always bad to increase timeouts when needed?
 
 ### 9 Rules of Debugging
 
-1. Understand the system
-2. Make it fail
-3. Quit thinking and look
+1) Understand the system
+2) Make it fail
+3) Quit thinking and look
 
 +++
 
 ### 9 Rules of Debugging
 
-4. Divide and conquer
-5. Change one thing at a time
-6. Keep an audit trail
+4) Divide and conquer
+5) Change one thing at a time
+6) Keep an audit trail
 
 +++
 
 ### 9 Rules of Debugging
 
-7. Check the plug
-8. Get a fresh view
-9. If you didn't fix it, it ain't fixed
+7) Check the plug
+8) Get a fresh view
+9) If you didn't fix it, it ain't fixed
 
 +++
 
