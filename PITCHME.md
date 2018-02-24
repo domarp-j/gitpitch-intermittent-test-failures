@@ -18,10 +18,10 @@
 ### Deterministic Behavior
 
 - Deterministic code always produces the same output for a given input
-- In contrast, non-deterministic code produces random, unexpected output for a given input, possibly caused by:
-  - Race conditions
-  - Unexpected state
-  - Changing state
+- In contrast, non-deterministic code produces random, unexpected output for a given input
+
+Note:
+Possibly caused by race conditions, unexpected state, changing state
 
 +++
 
@@ -113,9 +113,11 @@ Unfortunately no, but fully Dockerizing our test suite *may* help.
 
 - Don't randomize your test data
 - Don't use Faker, which might return strings in a format that code doesn't handle properly
-  - Names: D'Angelo, Doe-Smith, Smith Jennings
-  - Phone numbers in different formats
 - If you do need to randomize data, output it with test error messages to make debugging easier
+
+Note:
+Names: D'Angelo, Doe-Smith, Smith Jennings
+Phone numbers in different formats
 
 ---
 
@@ -278,7 +280,7 @@ Is it always bad to increase timeouts when needed?
 - When you find a non-deterministic test failure
   - Find out if it's reproducible or non-reproducible
   - Use the strategies above to narrow down the scope of the problem
-  - Be systematic and write things down!
+  - Be systematic - use the 9 rules of debugging
 
 Note:
 I have created a Confluence page that you can use as a quick primer for diagnosing intermittent test failures.
