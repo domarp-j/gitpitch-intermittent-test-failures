@@ -13,6 +13,15 @@
 
 ---
 
+### Agenda
+
+- Understand deterministic & non-deterministic behavior
+- Learn how to reproduce intermittent test failures, if possible
+- Learn strategies for handling reproducible & non-reproducible failures
+- Quick primer: 9 rules of debugging
+
+---
+
 @title[Deterministic Behavior]
 
 ### Deterministic Behavior
@@ -269,7 +278,7 @@ Is it always bad to increase timeouts when needed?
 
 +++
 
-### Solidify your Debugging Process
+### 9 Rules of Debugging
 
 [Source: Debugging by David J. Agans](https://www.amazon.com/Debugging-Indispensable-Software-Hardware-Problems/dp/0814474578)
 
