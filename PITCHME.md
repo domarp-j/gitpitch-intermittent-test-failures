@@ -243,7 +243,7 @@ Discussion - is it always bad to increase timeouts when needed?
 
 ---
 
-### Debugging: Agans's 9 Rules
+### 9 Rules of Debugging
 
 - Understand the system
 - Make it fail
@@ -251,7 +251,7 @@ Discussion - is it always bad to increase timeouts when needed?
 
 +++
 
-### Debugging: Agans's 9 Rules
+### 9 Rules of Debugging
 
 - Divide and conquer
 - Change one thing at a time
@@ -259,7 +259,7 @@ Discussion - is it always bad to increase timeouts when needed?
 
 +++
 
-### Debugging: Agans's 9 Rules
+### 9 Rules of Debugging
 
 - Check the plug
 - Get a fresh view
