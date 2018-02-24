@@ -249,11 +249,7 @@ Discussion - is it always bad to increase timeouts when needed?
 - Make it fail
 - Quit thinking and look
 
-
-<span class="code-presenting-annotation fragment current-only visible current-fragment">
-  [Source: Debugging by David J. Agans](https://www.amazon.com/Debugging-Indispensable-Software-Hardware-Problems/dp/0814474578)
-</span>
----
++++
 
 ### Solidify your Debugging Process
 
@@ -261,11 +257,7 @@ Discussion - is it always bad to increase timeouts when needed?
 - Change one thing at a time
 - Keep an audit trail
 
-<span class="code-presenting-annotation fragment current-only visible current-fragment">
-  [Source: Debugging by David J. Agans](https://www.amazon.com/Debugging-Indispensable-Software-Hardware-Problems/dp/0814474578)
-</span>
-
----
++++
 
 ### Solidify your Debugging Process
 
