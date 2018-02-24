@@ -238,8 +238,13 @@
 
 ### Takeaways
 
+- When you find a non-deterministic test failure
+  - Find out if it's reproducible or non-reproducible
+  - Use the strategies above to narrow down the scope of the problem
+  - Be systematic and write things down!
 - Defensive testing at the start is the best way to prevent intermittent test failures
-- There are strategies for addressing both reproducible and non-reproducible N.D. test failures
--
+
+Note:
+I have created a Confluence page that you can use as a quick primer for diagnosing intermittent test failures.
 
 ---
