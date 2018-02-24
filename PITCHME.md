@@ -236,4 +236,10 @@
 
 ---
 
-### Look out for a Confluence page
+### Takeaways
+
+- Defensive testing at the start is the best way to prevent intermittent test failures
+- There are strategies for addressing both reproducible and non-reproducible N.D. test failures
+-
+
+---
