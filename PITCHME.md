@@ -13,15 +13,24 @@
 
 ---
 
+### Agenda
+
+- Understand deterministic & non-deterministic behavior
+- Learn how to reproduce intermittent test failures, if possible
+- Learn strategies for handling reproducible & non-reproducible failures
+- Quick primer: 9 rules of debugging
+
+---
+
 @title[Deterministic Behavior]
 
 ### Deterministic Behavior
 
 - Deterministic code always produces the same output for a given input
-- In contrast, non-deterministic code produces random, unexpected output for a given input, possibly caused by:
-  - Race conditions
-  - Unexpected state
-  - Changing state
+- In contrast, non-deterministic code produces random, unexpected output for a given input
+
+Note:
+Possibly caused by race conditions, unexpected state, changing state
 
 +++
 
@@ -99,9 +108,11 @@
 
 - Don't randomize your test data
 - Don't use Faker, which might return strings in a format that code doesn't handle properly
-  - Names: D'Angelo, Doe-Smith, Smith Jennings
-  - Phone numbers in different formats
 - If you do need to randomize data, output it with test error messages to make debugging easier
+
+Note:
+Names: D'Angelo, Doe-Smith, Smith Jennings
+Phone numbers in different formats
 
 ---
 
@@ -109,7 +120,7 @@
 
 - Don't overwrite constants - they can be mutated between tests
 - RSpec has a `stub_const` method for stubbing constants
-- Unfortunately, MiniTest doesn't have a built-in method for stubbing constants when needed
+- MiniTest requires a gem `minitest_stub_const`
 
 +++?code=code/minitest_stub_const.rb&lang=ruby
 
@@ -150,12 +161,12 @@
 - Obtain a test seed that includes the test failure
 - Use **bisection** to identify the minimum amount of tests that produce the test failure
   - RSpec has a built-in `--bisect` option
-  - [`minitest-bisect`](https://github.com/seattlerb/minitest-bisect) gem provides the same functionality for MiniTest
+  - [`minitest-bisect`](https://github.com/seattlerb/minitest-bisect) gem
 - Useful to identify if data pollution is the culprit behind the ND test
 
 ---
 
-### Non-Reproducible ND Tests
+### Non-Reproducible N.D. Tests
 
 +++
 
@@ -200,32 +211,74 @@
 
 - Compare configs between environments (env variables)
 - Check if CI is executing tests differently than local machine
-- Seeds missing/present on local machine
-- Missing migrations
-- OS differences
-- Note - Docker consistency between local & CI should resolve this
+- Seeds missing/present on local machine?
+- Missing migrations?
+- OS differences?
+
+Note:
+Docker consistency between local & CI should resolve this
 
 ---
 
 ### 3) Timeouts and Asynchronous JavaScript
 
 - You can't always trust your local machine to replicate CI failures
-- Tim Mertens recommends increasing timeouts as needed
 - Wait for pages to finish loading before interacting with them
   - [`site_prism` gem load validations](https://github.com/natritmeyer/site_prism)
 
+Note:
+Is it always bad to increase timeouts when needed?
+
 ---
 
-### 4) ???
+### 4) I'm So Lost
 
 - SSH into the environment & try to reproduce it
 - Check gem GitHub repos for related issues/changes
 - Make sure you're using a debugger
 - Add logging to your tests
-- Are you being systematic with how you're tackling the bug?
-  - Do a bisect and keep narrowing your scope
-  - Write it down
 
 ---
 
-### Look out for a Confluence page
+### 9 Rules of Debugging
+
+- Understand the system
+- Make it fail
+- Quit thinking and look
+
++++
+
+### 9 Rules of Debugging
+
+- Divide and conquer
+- Change one thing at a time
+- Keep an audit trail
+
++++
+
+### 9 Rules of Debugging
+
+- Check the plug
+- Get a fresh view
+- If you didn't fix it, it ain't fixed
+
++++
+
+### 9 Rules of Debugging
+
+[Source: Debugging by David J. Agans](https://www.amazon.com/Debugging-Indispensable-Software-Hardware-Problems/dp/0814474578)
+
+---
+
+### Takeaways
+
+- When you find a non-deterministic test failure
+  - Find out if it's reproducible or non-reproducible
+  - Use the strategies above to narrow down the scope of the problem
+  - Be systematic - use the 9 rules of debugging
+- Defensive testing at the outset is the best way to prevent intermittent test failures
+
+Note:
+I have created a Confluence page that you can use as a quick primer for diagnosing intermittent test failures.
+
+---
