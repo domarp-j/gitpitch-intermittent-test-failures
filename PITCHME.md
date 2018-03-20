@@ -76,7 +76,7 @@ Possibly caused by race conditions, unexpected state, changing state
 
 +++?code=code/trans_fix.rb&lang=ruby
 
-<span class="code-presenting-annotation fragment current-only visible current-fragment">Try not to do this</span>
+<span class="code-presenting-annotation fragment current-only visible current-fragment">Make sure this is TRUE</span>
 
 ---
 
